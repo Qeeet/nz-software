@@ -1,0 +1,24 @@
+<script>var pagename="Syntax Highlighting"</script>
+<script src="bonfirehelp.js"></script>
+Syntax highlighting is a tool that shows different sections of a text file in different colors. For example in XML files, you might see the tag name in BROWN, while seeing plain text in BLACK. Here is an example of a C++ file using syntax highlighting:<br>
+<pre>
+<font color=green>//--------------------------------------------------------------------</font>
+BOOL ModuleTerminate(CThisTestModule * pThisTestModule)
+{
+	<font color=green>// Drop the table created in the ModuleInit</font>
+	<font color=blue>if</font>( pThisTestModule-&gt;m_pVoid )
+	{
+		<font color=green>// Remove table from database and Delete CTable object</font>
+		((CTable *)pThisTestModule-&gt;m_pVoid)-&gt;DropTable();
+		<font color=blue>delete</font> ((CTable *)pThisTestModule-&gt;m_pVoid);
+		pThisTestModule-&gt;m_pVoid = NULL;
+	}
+	
+	<font color=blue>return</font> ModuleReleaseDBSession(pThisTestModule);
+}
+</pre>
+<ul>
+<li>To configure the colors for syntax-highlighting click on <a href="editor options.html">Options/Editor</a></li>
+<li>To configure the type of syntax-highlighting parser to use for each type of file click on <a href="views options.html">Options/Views</a></li>
+</li>
+<script src="bonfirehelpfooter.js"></script>

@@ -1,0 +1,42 @@
+<script>var pagename="Common Syntax"</script>
+<script src="header.js"></script>
+Any input that isn't a command is considered a mathematical expression (e.g. &quot;<font face="courier new">sin(x)*pi</font>&quot;) and will
+be calculated and the answer outputted to the screen.
+
+<h5>The currently implemented commands are:</h5>
+<ul>
+<li><b>delete: x</b> - Deletes the function or variable named (x).</li>
+<li><b>clear</b> - Clears the output screen.</li>
+<li><b>f(x,y,...) = z</b> - Creates a new expression-based function named (f) with parameters (x), (y), etc.
+	The function value (expression) will be (z), which may reference the parameters as variables (e.g.
+	&quot;<font face="courier new">x^2 + y^2</font>&quot;)</li>
+<li><b>x = z</b> - Creates a new variable named (x) and sets its value to (z). If (x) already exists, its
+	value is set to (z)</li>
+</ul>
+
+<h5>The current operations are:</h5>
+<ul>
+<li><big>+</big> (Addition)</li>
+<li><big>-</big> (Subtraction)</li>
+<li><big>*</big> (Multiplication)</li>
+<li><big>/</big> (Division)</li>
+<li><big>%</big> (Modulus/Remainder)</li>
+<li><big>^</big> (Exponent)</li>
+</ul>
+
+<h5>The rules for expressions are:</h5>
+<ul>
+<li>Expressions are comprised of operators, values, grouped sub-expressions, and functions.</li>
+<li>Simple expressions contain only values (e.g. &quot;<font face="courier new">2.5</font>&quot;)</li>
+<li>Complex expressions contain values, operators, and/or functions (e.g. &quot;<font face="courier new">sin(90) + 2.5 ^ x</font>&quot;)</li>
+<li>Expressions may contain grouped sub-expressions by using parentheses (e.g. &quot;<font face="courier new">(sin(90) + 2.5 ^ x) - (5 + (2 - 5))</font>&quot;)</li>
+<li>Functions can be used by using the function name and expressions for each parameter (enclosed in parentheses and separated by commas)
+(e.g. &quot;<font face="courier new">1 + min(2,3,pi,4 ^ 2)</font>&quot;)</li>
+</ul>
+
+<p><b>Note: To use the results of the previously evaluated expression, use the variable "ans"</b></p>
+
+<p><b>Note: In the case of a syntax error, the outputted error information will contain the zero-based index of
+	the character that caused the error.</b></p>
+
+<script src="footer.js"></script>

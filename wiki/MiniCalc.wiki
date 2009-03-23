@@ -14,4 +14,8 @@ It is also possible to make expression-based functions. To create a fahrenheit-t
 cel(f) = 5 * (f - 32) / 9
 cel(56)
 }}}
-MiniCalc would then output the value '13.3333' as the result. For information about the input syntax, click here.	
+MiniCalc would then output the value '13.3333' as the result. For information about the input syntax, click here.
+
+= Screenshot =
+
+http://nz-software.googlecode.com/svn/trunk/mini-calc/help-src/gui.gif

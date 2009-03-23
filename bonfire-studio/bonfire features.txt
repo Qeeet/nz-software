@@ -1,0 +1,257 @@
+BONFIRE STUDIO FEATURES AND BUGS
+NOTE: rename "View" key in registry to "Workspace" when setup is upgrading
+
+f ?	customizable toolbar/menu/shortcut keys (download control)
+f ?	code library, snippets
+f	user commands/tools
+f	macros (up to 10)
+f ?	scripted plugins (assign shortcut keys)
+f ?	really virtual folders (file groups)
+f	update Project Manager tree control
+f	custom draw projectbar and XML tree
+b	when adding a folder that exists, keep going and maybe there are new things to add (subfolders)
+f	mouse wheel panning (click with middle button and move mouse)
+b	mouse wheel doesnt work on win98
+f	custom draw outputbar to have bold find in files occurence in line like BCB does, etc.
+f	customize encoding type for project file
+f	when removing an item, ask to permanently delete -- should have option for Auto-Yes or Auto-No
+f	use user-defined filter patterns (see lpstrCustomFilter under OPENFILENAME in platform SDK)
+f	custom file dialogs... Open As, Save As Format (Unicode or text-- like notepad)
+f	Add dialogs should default to parent directory
+b	outputbar shows up when switching to xml tree in fullscreen mode or if it's not already visible
+f	should be able to cut,copy,paste items in project bar
+f	right-click drag should popup a menu "move here, copy here, cancel" like in VC++
+b	when opening something from projectbar, the opened window isn't given focus/set active
+f	move all literal strings to resource file
+f	all commands should be available on main menu
+f	unicode, utf-8, unicode big endian text file compatibility
+f	windows xp compatible, windows xp-style ui
+f	file explorer
+f	autosave
+f	drag & drop anything to anywhere
+f	well-format xml file
+f	selection is linked between views
+f	implement the keyboard fully
+b ??	fix double scrollbar in source view
+------------ 1.5.0 ------------------------
+f	ASP highlighting
+f	print browser view
+f	edit XML tree
+f	make menu dependent on the current view of the document
+f	clear output messages (checkbox in options/right click menu)
+f	check XML against DTD, XSD
+f	regex search in find in files
+f	regex search in find/replace
+f	icons for insert element, etc
+f	while loading long prj - try to show the message anyway
+f	when renaming a file, ask to overwrite if exists
+------------ 1.4.0 ------------------------
+f x	new XML Tree icons
+b x	fixed random Output window bugs
+b x	when opening a non source view file, don't check for line char limit
+b x	dblclick on doc switches to first view
+b x	Save file as (new or existing file) an existing file creates duplicate node
+b x	Filewatch doesn't work properly
+b x	allows saving of read only files
+b x	corrupts GIF, DOC, etc files on save (should disable save or something)
+b x	when adding a file to project that already exists, creates duplicate node
+b x	saving files with '&' messes up the PRJ file
+f x	speed up xml tree. project tree
+f x	print xml tree
+f x	CSS highlighting
+f x	SQL highlighting
+f x	XML Tree - expand/collapse commands
+f x	Validate File (only with XDR schemas)
+f x	Overwrite indicator
+b x	clean up output messages remove unwanted (\r, \n) characters
+b X	find in files doesnt show multiple occurences of the text in one line, only the first occurence
+b X	replace all non-alphanumeric characters into either periods or spaces when creating output
+f X	implement dialog to configure file types - views
+f x	implement dialog to configure file types - parsers
+f X	configure display of attributes, text, comments in XML Tree View
+b x	when expanding nodes, the icon appears incorrect
+f X	allow to disable Source View, makes file read-only (jpg, doc, etc.)
+------------ 1.3.2 ------------------------
+b x	find in files doesnt search subfolders
+b x	goto doesnt work properly
+b x	open file from FIF results doesnt work
+b x	remember all search options in FIF dialog
+b x	using splitter in source view crashes when switching back and forth to source view from other views
+b ?	printing wingdings bug
+------------ 1.3.1 ------------------------
+b x	when cancelling renaming of a folder, it doesn't correctly compare the old and new name
+b X	when adding folders, if "add subfolders" is not checked, no files are added
+b x	refreshing views doesnt work
+f X	have menus for bookmarks (Ctrl+1-9, Alt+1-9, Ctrl+F2, F2, Shift+F2) the code is there, we just need menus for it
+b x	recent projects aren't being saved
+b x	dbl-click/enter on project/folder node doesn't expand it
+b X	pressing up, down doesnt always work in project manager
+b x	change the warning message when splitting file lines
+f x	allow splitter for source view
+b x	don't refresh views unless file has been modified
+------------ 1.3.0 ------------------------
+f x	implement options dialog for colors
+b x	File->New, write something in it, close it, dont save... it dosnt get removed from project bar
+b x	the color for automatic (default) in synytax wasnt being set
+b X	ENTER in FIF doesnt open file (because u use HitTest to check for selected item, shud just use GetSelectedItem)
+f x	use CWaitCursor more often... when an operation takes a long time
+b X	open file, edit, move, rename, save
+b X	moving a file made it read only
+b X	when doing unsuccessfull simple drag n drop, timers dont get stopped
+b x	save all should be enabled if a project is modified
+f X	File > Open from URL
+f X	nicer disabled toolbar bitmaps
+b x	when a file contains lines with too many characters, fatal exception
+b x	something is catching WM_ONKEYDOWN message instead of the treeCtrl
+b x	document title contains ' *' if its modified... that should only be in the final frame caption
+f x	open for read-only
+b X	source view doesn't allow you to drag text
+b x	free resources of browseinfo
+b x	when exiting in fullscreen mode and running again, all the bars are invisible
+f X	ENTER and ESC key when editing labels
+f x	drop down history for all dialog text boxes
+f x	save options in all dialogs
+b x	shouldnt be able to add folder if it doesnt exist
+f x	find in files - dropdown for all 3 boxes
+b X	when pressing the "Escape" key, interface jolts (check for m_bFullScreen before EscapeFullScreen)
+b X	root node's text is only the first character instead of the whole string - widechar problem fixed
+b x	green toolbar buttons
+b x	the find in files results have boxes [][] in them
+b x	when saving a project "as", the recent project list doesnt get updated
+b x	i switch to browser and back to Code and the window doesnt resize with the frame
+b x	when doing "close all windows", all projects get closed
+b X	add folders was raising an exception sometimes (the problem was in the loop condition)
+f x	mouse wheel scrolling (current implementation is win98+)
+b X	icon for HTML wasn't showing up (CoInitialize wasnt being called)
+b x	after escaping from fullscreen, vertical toolbars lose all buttons except for first one
+f x	file -> Run/Execute (under OS default application)
+------------ 1.2.1 --------------------------
+b x	prevent same folder from adding many times
+f x	physically move the file/folder when dragging
+b x	when switching between output tabs, the order of items gets reversed
+b x	check accelerators
+f X	FIF scroll to the bottom
+f X	FIF show number of results.... e.g. "0 file(s) found"
+b x	when moving folder with children, their "project" pointer is not updated correctly
+f x	add folder Move to ->
+f x 	drag and drop files
+f x	drag and drop folders
+f X	add folder popup menu - remove from project
+b x	when dbl-clicking on project in explorer, bonfire tries to open the project file, exception
+b x	when creating a new project output says "Done"
+f x	New Project"..."
+b x	when creating a new project file is not created automatically.
+b x	when i create a new file, "Untitled1" doesnt show up as the tree item's text
+f X	move find and replace tools to Search Menu
+b x	caption of child doc changes when saving
+b X	when saving a new file in misc, icon becomes not found
+f x	goto line... Ctrl+G
+f x	move file to a different project
+b x	status bar messages for all the menus
+------------ 1.2.0 --------------------------
+b X	when saving Miscellaneous as another project, it becomes "NEW"
+f X	match options in f.i.f.
+f x	doubleclick on f.i.f. list opens up the file and selects text
+f X	menu mnemonics
+b X	line not showing in xml error
+f X	clear xml messages after successful validation
+f X	clear fif messages
+b x	output icons are not showing properly
+f x	add images to help file
+b X	apostrophies highlighted outside the <>'s
+b x	disallow opening of the same file
+f X	Edit > Find in Files
+f x 	update Output window to List control
+------------ 1.1.1 --------------------------
+f X	Tools > Locate in explorer
+b X	read-only files, shouldnt be asked to save, and save should be disabled
+f X	fix dock bars
+b X	save all shouldnt ask to save changes
+------------ 1.1.0 --------------------------
+f x	draw folders first or files
+f X	monitor modifying files outside the application
+b x	disable delete of misc project
+b X	no "virtual" files - should copy files on Add Files...
+b X	show CORRECT icon of each child form (icon disappears after save)
+b X	un-fullscreen shouldn't restore, keep it maximized (store WINDOWPLACEMENT)
+b X	when saving on switching views, doesnt change caption on save
+b X	asks twice to save changes
+f X	temporary files when switching views
+f x	loading..."DONE"
+f X	Window > close all
+f X	Window > close current
+f x	refresh project (refresh contents, icons, paths)
+f x	recent projects list
+f X	drag from other apps
+f x	sort nodes
+------------ 1.0 --------------------------
+f X	syntax highlight for different file types
+f x	view : full screen
+f X	text editor options
+f X	opening project from explorer
+f X	finish all features for add folders dialog
+f x	virtual folders - adding non-direct subfolders
+f x	save options to registry
+f X	display paths in project explorer
+b X	(re)opening child frames
+f X	file properties menu item
+f x	rename files
+f x	rename folders
+f x	rename projects
+f x	read only files
+f X	modified flag (*)
+b X	open file displays incorrect path
+b X	saving as files - changing icons on the child frame
+b X	saving as files - changing captions
+f X	save all
+b x	project close doesnt work properly
+b X	operations on a project are not executed with correct project
+f X	shouldnt be able to close misc
+f X	project save as - when forced
+f x	new project specify path right away
+b X	project (misc) save as doesnt work
+f X	when saving project to different directory, check if folders are still virtual (REFRESH)
+b X	removing file from project doesnt close child
+b x	closing app - save "modified" project(s)
+b X	dont ask to save miscellaneous project
+f X	project save
+f X	no right-click in source editor
+f X	clear output every time
+b X	doesnt delete Untitled project tree node when closing untitled
+f x	virtual folders under miscellaneous?
+f X	new folder
+f x	icon menus
+b x	if open file doesnt exist - illegal operation
+b X	close new document - cant reopen - should just remove on close
+f x	256 color icons
+f x	link to help file
+f x	installer
+f X	add a comment icon for XML TRee view
+
+---------------------------------------------------------------------------------
+project->settings->link->general->enable profiling
+build->profile
+---------------------------------------------------------------------------------
+Bonfire is an editor and file/project manager for XML, XSL, and HTML. 
+UI is a multiple-document interface, and includes docking toolbars, an error message window, and a project manager window. 
+Documents can be viewed in source code mode (with syntax-highlighting), in an XML tree, or in a browser view. 
+Currently, Bonfire supports syntax highlighting of XML, XSL, HTML, and C++. 
+Multiple files and directories can be grouped together into one project file. Files can be dragged from other applications into Bonfire, and there¹s a recent files and projects list. 
+Bonfire requires Internet Explorer 5 or MSXML parser Version 3. This release adds drag-n-drop functionality in Project Manager, and allows opening of a file from a specified URL. 
+---------------------------------------------------------------------------------
+Hex Color Finder is a very simple and easy-to-use color finder that lets you choose custom colors by specifying the RGB numbers, or can retrieving a specific color from any area on the screen. You can save and load colors from presets, as well as create your own presets. You can use the "Link Scrollbars" feature to adjust the brightness of any given color. This utility will show you the specified color in hexadecimal format, and you can copy+paste it into your web files.
+---------------------------------------------------------------------------------
+X is distributed as freeware. This software is provided "as is", 
+without any guarantee made as to its suitability or fitness for any particular 
+use. It may contain bugs, so use of this tool is at your own risk. Author 
+takes no responsibility for any damage that may unintentionally be caused 
+through its use. You may not distribute X in any form without 
+express written permission of NZ Software. 
+
+---------- additional credits ----------------------------------------------------
+Michael Dunn (mdunn@inreach.com) - CMRUComboBox
+Jon Rizzo (jrizzo@langan.com) - CRecentStringList
+Andrei Stcherbatchenko - CrystalEdit
+
+---------- search keywords -------------------------------------------------------
+xml,xsl,xslt,html,editor,edit,project,management,manager,IDE,developer,development,Integrated Development Environment,Extensible Markup Languages,markup

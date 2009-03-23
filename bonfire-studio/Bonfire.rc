@@ -1,0 +1,1384 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Bonfire.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MainFrame.ico"
+IDR_BONFIRE_TYPE        ICON    DISCARDABLE     "res\\BonNew.ico"
+IDI_PROJECT             ICON    DISCARDABLE     "res\\Project.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_MARGIN_ICONS        BITMAP  DISCARDABLE     "res\\MarginIcons.bmp"
+IDR_TOOLBAR_PROJECT     BITMAP  DISCARDABLE     "res\\ToolbarProject.bmp"
+IDR_TOOLBAR_FULLSCREEN  BITMAP  DISCARDABLE     "res\\FullScreen.bmp"
+IDR_TOOLBAR_FIND        BITMAP  DISCARDABLE     "res\\ToolbarFind.bmp"
+IDB_PROJBAR_ICONS       BITMAP  DISCARDABLE     "res\\ProjectBar256.bmp"
+IDB_XMLTREE_ICONS       BITMAP  DISCARDABLE     "res\\XMLTree256.bmp"
+IDB_MENU_ICONS          BITMAP  DISCARDABLE     "res\\MenuIcons.bmp"
+IDB_TOOLBAR_PROJECT     BITMAP  DISCARDABLE     "res\\ToolbarProject256.bmp"
+IDB_TOOLBAR_STANDARD    BITMAP  DISCARDABLE     "res\\Toolbar256.bmp"
+IDB_TOOLBAR_FIND        BITMAP  DISCARDABLE     "res\\ToolbarFind256.bmp"
+IDB_OUTPUT_ICONS        BITMAP  DISCARDABLE     "res\\OutputIcons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SAVEALL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_VIEW_FULLSCREEN
+    SEPARATOR
+    BUTTON      ID_HELP_CONTENTS
+END
+
+IDR_TOOLBAR_PROJECT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PROJECT_NEW
+    BUTTON      ID_PROJECT_OPEN
+    BUTTON      ID_PROJECT_SAVE
+    SEPARATOR
+    BUTTON      ID_PROJECT_NEWFOLDER
+    BUTTON      ID_PROJECT_ADDFILESTOPROJECT
+    BUTTON      ID_PROJECT_ADDDIRTOPROJECT
+    BUTTON      ID_PROJECT_REMOVEFROMPROJECT
+END
+
+IDR_TOOLBAR_FULLSCREEN TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_VIEW_FULLSCREEN
+END
+
+IDR_TOOLBAR_FIND TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_FIND
+    BUTTON      ID_EDIT_FIND_PREVIOUS
+    BUTTON      ID_EDIT_REPEAT
+    BUTTON      ID_EDIT_REPLACE
+    BUTTON      ID_EDIT_FINDINFILES
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New File\tCtrl+N",           ID_FILE_NEW
+        MENUITEM "&Open File...\tCtrl+O",       ID_FILE_OPEN
+        MENUITEM "Open from &URL...",           ID_FILE_OPENFROMURL
+        MENUITEM SEPARATOR
+        MENUITEM "Ne&w Project...\tCtrl+Shft+N", ID_PROJECT_NEW
+        MENUITEM "Open Pro&ject...\tCtrl+Shft+O", ID_PROJECT_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Sa&ve Project\tCtrl+Shift+S", ID_PROJECT_SAVE
+        MENUITEM "Save Proje&ct As...",         ID_PROJECT_SAVEAS
+        MENUITEM "Save Al&l\tCtrl+L",           ID_FILE_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Print Se&tup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Recent Files"
+        BEGIN
+            MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+            , GRAYED
+        END
+        POPUP "Recent Projects"
+        BEGIN
+            MENUITEM "Recent Project",              ID_FILE_MRU_PROJECT1
+            , GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Main Toolbar",               ID_VIEW_TOOLBAR
+            MENUITEM "&Project Toolbar",            ID_VIEW_TOOLBAR_PROJECT
+            MENUITEM "&Find Toolbar",               ID_VIEW_TOOLBAR_FIND
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Project Manager",            ID_VIEW_PROJECTEXPLORER
+        MENUITEM "P&roperties",                 ID_VIEW_TAGPROPERTIES
+        , GRAYED
+        MENUITEM "&Output",                     ID_VIEW_OUTPUTWINDOW
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Full Screen\tF11",           ID_VIEW_FULLSCREEN
+    END
+    POPUP "&Search"
+    BEGIN
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Find Pre&vious\tShift+F3",    ID_EDIT_FIND_PREVIOUS
+        MENUITEM "&Replace...\tCtrl+R",         ID_EDIT_REPLACE
+        MENUITEM "Find in Files...",            ID_EDIT_FINDINFILES
+        MENUITEM SEPARATOR
+        MENUITEM "Goto Line...\tCtrl+G",        ID_EDIT_GOTOLINE
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "Re&fresh Project",            ID_PROJECT_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "New Fol&der...",              ID_PROJECT_NEWFOLDER
+        MENUITEM "&Add Files...",               ID_PROJECT_ADDFILESTOPROJECT
+        MENUITEM "Add Fo&lders...",             ID_PROJECT_ADDDIRTOPROJECT
+        MENUITEM "&Remove from Project",        ID_PROJECT_REMOVEFROMPROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Project Properties",         ID_PROJECT_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Project",              ID_PROJECT_CLOSE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Open in Default Viewer\tF5",  ID_TOOLS_OPENDEFAULT
+        MENUITEM "&Locate in Explorer\tShft+F5", ID_TOOLS_LOCATEINEXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents\tF1",               ID_HELP_CONTENTS
+        MENUITEM "&Index...",                   ID_HELP_INDEX
+        MENUITEM "&Search...",                  ID_HELP_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "&About Bonfire Studio...",    ID_APP_ABOUT
+        MENUITEM "NZ Software &Homepage",       ID_HELP_HOMEPAGE
+    END
+END
+
+IDR_BONFIRETYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New File\tCtrl+N",           ID_FILE_NEW
+        MENUITEM "&Open File...\tCtrl+O",       ID_FILE_OPEN
+        MENUITEM "Open from &URL...",           ID_FILE_OPENFROMURL
+        MENUITEM SEPARATOR
+        MENUITEM "Ne&w Project...\tCtrl+Shft+N", ID_PROJECT_NEW
+        MENUITEM "Open Pro&ject...\tCtrl+Shft+O", ID_PROJECT_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Save File\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Save File &As...",            ID_FILE_SAVE_AS
+        MENUITEM "Sa&ve Project\tCtrl+Shift+S", ID_PROJECT_SAVE
+        MENUITEM "Save Proje&ct As...",         ID_PROJECT_SAVEAS
+        MENUITEM "Save Al&l\tCtrl+L",           ID_FILE_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Preview",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Print Se&tup...",             ID_FILE_PRINT_SETUP
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "File Propert&ies...",         ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        POPUP "Recent Files"
+        BEGIN
+            MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+            , GRAYED
+        END
+        POPUP "Recent Projects"
+        BEGIN
+            MENUITEM "Recent Project",              ID_FILE_MRU_PROJECT1
+            , GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Select All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Tab Selection\tTab",          ID_EDIT_TAB
+        MENUITEM "Untab  Selection\tShift+Tab", ID_EDIT_UNTAB
+        MENUITEM "Uppercase Selection\tCtrl+U", ID_EDIT_UPPERCASESELECTION
+        MENUITEM "Lowercase Selection\tCtrl+L", ID_EDIT_LOWERCASESELECTION
+        MENUITEM SEPARATOR
+        POPUP "&Bookmarks"
+        BEGIN
+            MENUITEM "Goto Bookmark 0",             ID_EDIT_GO_BOOKMARK0
+            MENUITEM "Goto Bookmark 1",             ID_EDIT_GO_BOOKMARK1
+            MENUITEM "Goto Bookmark 2",             ID_EDIT_GO_BOOKMARK2
+            MENUITEM "Goto Bookmark 3",             ID_EDIT_GO_BOOKMARK3
+            MENUITEM "Goto Bookmark 4",             ID_EDIT_GO_BOOKMARK4
+            MENUITEM "Goto Bookmark 5",             ID_EDIT_GO_BOOKMARK5
+            MENUITEM "Goto Bookmark 6",             ID_EDIT_GO_BOOKMARK6
+            MENUITEM "Goto Bookmark 7",             ID_EDIT_GO_BOOKMARK7
+            MENUITEM "Goto Bookmark 8",             ID_EDIT_GO_BOOKMARK8
+            MENUITEM "Goto Bookmark 9",             ID_EDIT_GO_BOOKMARK9
+            MENUITEM SEPARATOR
+            MENUITEM "Toggle Bookmark 0",           ID_EDIT_TOGGLE_BOOKMARK0
+            MENUITEM "Toggle Bookmark 1",           ID_EDIT_TOGGLE_BOOKMARK1
+            MENUITEM "Toggle Bookmark 2",           ID_EDIT_TOGGLE_BOOKMARK2
+            MENUITEM "Toggle Bookmark 3",           ID_EDIT_TOGGLE_BOOKMARK3
+            MENUITEM "Toggle Bookmark 4",           ID_EDIT_TOGGLE_BOOKMARK4
+            MENUITEM "Toggle Bookmark 5",           ID_EDIT_TOGGLE_BOOKMARK5
+            MENUITEM "Toggle Bookmark 6",           ID_EDIT_TOGGLE_BOOKMARK6
+            MENUITEM "Toggle Bookmark 7",           ID_EDIT_TOGGLE_BOOKMARK7
+            MENUITEM "Toggle Bookmark 8",           ID_EDIT_TOGGLE_BOOKMARK8
+            MENUITEM "Toggle Bookmark 9",           ID_EDIT_TOGGLE_BOOKMARK9
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Read-Only",                  ID_EDIT_READONLY
+    END
+    POPUP "&Search"
+    BEGIN
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Find Pre&vious\tShift+F3",    ID_EDIT_FIND_PREVIOUS
+        MENUITEM "&Replace...\tCtrl+R",         ID_EDIT_REPLACE
+        MENUITEM "Find in Files...",            ID_EDIT_FINDINFILES
+        MENUITEM SEPARATOR
+        MENUITEM "Goto Line...\tCtrl+G",        ID_EDIT_GOTOLINE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Main Toolbar",               ID_VIEW_TOOLBAR
+            MENUITEM "&Project Toolbar",            ID_VIEW_TOOLBAR_PROJECT
+            MENUITEM "&Find Toolbar",               ID_VIEW_TOOLBAR_FIND
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Project Manager",            ID_VIEW_PROJECTEXPLORER
+        MENUITEM "P&roperties",                 ID_VIEW_TAGPROPERTIES
+        , GRAYED
+        MENUITEM "&Output",                     ID_VIEW_OUTPUTWINDOW
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Full Screen\tF11",           ID_VIEW_FULLSCREEN
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "Re&fresh Project",            ID_PROJECT_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "New Fol&der...",              ID_PROJECT_NEWFOLDER
+        MENUITEM "&Add Files...",               ID_PROJECT_ADDFILESTOPROJECT
+        MENUITEM "Add Fo&lders...",             ID_PROJECT_ADDDIRTOPROJECT
+        MENUITEM "&Remove from Project",        ID_PROJECT_REMOVEFROMPROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Project Properties",         ID_PROJECT_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Project",              ID_PROJECT_CLOSE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Open in Default Viewer\tF5",  ID_TOOLS_OPENDEFAULT
+        MENUITEM "&Locate in Explorer\tShft+F5", ID_TOOLS_LOCATEINEXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "&Validate File (Interpret as XML)\tF8", 
+                                                ID_TOOLS_VALIDATE_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "C&lose Current Window",       ID_FILE_CLOSE
+        MENUITEM "Cl&ose All Windows",          ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents\tF1",               ID_HELP_CONTENTS
+        MENUITEM "&Index...",                   ID_HELP_INDEX
+        MENUITEM "&Search...",                  ID_HELP_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "&About Bonfire Studio...",    ID_APP_ABOUT
+        MENUITEM "NZ Software &Homepage",       ID_HELP_HOMEPAGE
+    END
+END
+
+IDR_POPUP_FILE MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Open",                       ID_FILE_SHOW
+        MENUITEM SEPARATOR
+        MENUITEM "Open in Default Viewer",      ID_TOOLS_OPENDEFAULT
+        MENUITEM "Locate in Explorer",          ID_TOOLS_LOCATEINEXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "&Save File\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Save File &As...",            ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename File",                ID_FILE_RENAME
+        MENUITEM "Re&move from Project",        ID_PROJECT_REMOVEFROMPROJECT
+        POPUP "Move to"
+        BEGIN
+            MENUITEM "Move To Project",             ID_FILE_MOVETO_PROJECT1
+            , GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "File &Properties",            ID_FILE_PROPERTIES
+    END
+END
+
+IDR_POPUP_PROJECT MENU DISCARDABLE 
+BEGIN
+    POPUP "Project"
+    BEGIN
+        MENUITEM "&Save Project",               ID_PROJECT_SAVE
+        MENUITEM "S&ave Project As...",         ID_PROJECT_SAVEAS
+        MENUITEM "&Close Project",              ID_PROJECT_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&New Folder...",              ID_PROJECT_NEWFOLDER
+        MENUITEM "A&dd Files...",               ID_PROJECT_ADDFILESTOPROJECT
+        MENUITEM "Add &Folders...",             ID_PROJECT_ADDDIRTOPROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename Project",             ID_PROJECT_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Project Properties",         ID_PROJECT_PROPERTIES
+    END
+END
+
+IDR_POPUP_FOLDER MENU DISCARDABLE 
+BEGIN
+    POPUP "Folder"
+    BEGIN
+        MENUITEM "&Locate in Explorer",         ID_TOOLS_LOCATEINEXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "&New Folder...",              ID_PROJECT_NEWFOLDER
+        MENUITEM "A&dd Files...",               ID_PROJECT_ADDFILESTOPROJECT
+        MENUITEM "Add &Folders...",             ID_PROJECT_ADDDIRTOPROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename Folder",              ID_FOLDER_RENAME
+        MENUITEM "Re&move from Project",        ID_PROJECT_REMOVEFROMPROJECT
+        POPUP "Move to"
+        BEGIN
+            MENUITEM "Move To Project",             ID_FILE_MOVETO_PROJECT1
+            , GRAYED
+        END
+    END
+END
+
+IDR_POPUP_EDITOR MENU DISCARDABLE 
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Select All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "Goto Line...\tCtrl+G",        ID_EDIT_GOTOLINE
+    END
+END
+
+IDR_POPUP_XMLELEMENT MENU DISCARDABLE 
+BEGIN
+    POPUP "Element"
+    BEGIN
+        MENUITEM "&Edit Element Name...",       ID_ELEMENT_EDIT_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Expand/Collapse\tDbl-Click",  ID_ELEMENT_EXPAND_COLLAPSE
+        MENUITEM "E&xpand All",                 ID_ELEMENT_EXPANDALL
+        MENUITEM "Co&llapse All",               ID_ELEMENT_COLLAPSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &Element...",          ID_ELEMENT_INSERT_ELEMENT
+        MENUITEM "Insert &Attribute...",        ID_ELEMENT_INSERT_ATTRIBUTE
+        MENUITEM "Insert C&omment...",          ID_ELEMENT_INSERT_COMMENT
+        MENUITEM "Insert Te&xt...",             ID_ELEMENT_INSERT_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+    END
+END
+
+IDR_POPUP_XMLATTRIBUTE MENU DISCARDABLE 
+BEGIN
+    POPUP "Attribute"
+    BEGIN
+        MENUITEM "Edit &Name...",               ID_ATTRIBUTE_EDIT_NAME
+        MENUITEM "Edit &Value...",              ID_ATTRIBUTE_EDIT_VALUE
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+    END
+END
+
+IDR_POPUP_XMLTEXT MENU DISCARDABLE 
+BEGIN
+    POPUP "Text"
+    BEGIN
+        MENUITEM "&Edit Text...",               ID_TEXTNODE_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+    END
+END
+
+IDR_POPUP_XMLCOMMENT MENU DISCARDABLE 
+BEGIN
+    POPUP "Comment"
+    BEGIN
+        MENUITEM "&Edit Comment Text...",       ID_COMMENT_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "L",            ID_FILE_SAVEALL,        VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_PROJECT_NEW,         VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_PROJECT_OPEN,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_PROJECT_SAVE,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_F1,          ID_HELP_CONTENTS,       VIRTKEY, NOINVERT
+    VK_F11,         ID_VIEW_FULLSCREEN,     VIRTKEY, NOINVERT
+    VK_F5,          ID_TOOLS_OPENDEFAULT,   VIRTKEY, NOINVERT
+    VK_F5,          ID_TOOLS_LOCATEINEXPLORER, VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          ID_TOOLS_VALIDATE_FILE, VIRTKEY, NOINVERT
+END
+
+IDR_DEFAULT_ACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    "0",            ID_EDIT_TOGGLE_BOOKMARK0, VIRTKEY, CONTROL, NOINVERT
+    "0",            ID_EDIT_GO_BOOKMARK0,   VIRTKEY, ALT, NOINVERT
+    "1",            ID_EDIT_TOGGLE_BOOKMARK1, VIRTKEY, CONTROL, NOINVERT
+    "1",            ID_EDIT_GO_BOOKMARK1,   VIRTKEY, ALT, NOINVERT
+    "2",            ID_EDIT_TOGGLE_BOOKMARK2, VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_EDIT_GO_BOOKMARK2,   VIRTKEY, ALT, NOINVERT
+    "3",            ID_EDIT_TOGGLE_BOOKMARK3, VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_EDIT_GO_BOOKMARK3,   VIRTKEY, ALT, NOINVERT
+    "4",            ID_EDIT_TOGGLE_BOOKMARK4, VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_EDIT_GO_BOOKMARK4,   VIRTKEY, ALT, NOINVERT
+    "5",            ID_EDIT_TOGGLE_BOOKMARK5, VIRTKEY, CONTROL, NOINVERT
+    "5",            ID_EDIT_GO_BOOKMARK5,   VIRTKEY, ALT, NOINVERT
+    "6",            ID_EDIT_TOGGLE_BOOKMARK6, VIRTKEY, CONTROL, NOINVERT
+    "6",            ID_EDIT_GO_BOOKMARK6,   VIRTKEY, ALT, NOINVERT
+    "7",            ID_EDIT_TOGGLE_BOOKMARK7, VIRTKEY, CONTROL, NOINVERT
+    "7",            ID_EDIT_GO_BOOKMARK7,   VIRTKEY, ALT, NOINVERT
+    "8",            ID_EDIT_TOGGLE_BOOKMARK8, VIRTKEY, CONTROL, NOINVERT
+    "8",            ID_EDIT_GO_BOOKMARK8,   VIRTKEY, ALT, NOINVERT
+    "9",            ID_EDIT_TOGGLE_BOOKMARK9, VIRTKEY, CONTROL, NOINVERT
+    "9",            ID_EDIT_GO_BOOKMARK9,   VIRTKEY, ALT, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_EDIT_GOTOLINE,       VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_DELETE_BACK,    VIRTKEY, NOINVERT
+    VK_BACK,        ID_EDIT_DELETE_WORD_BACK, VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_EDIT_LINE_DOWN,      VIRTKEY, NOINVERT
+    VK_DOWN,        ID_EDIT_SCROLL_DOWN,    VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_EDIT_EXT_LINE_DOWN,  VIRTKEY, SHIFT, NOINVERT
+    VK_END,         ID_EDIT_LINE_END,       VIRTKEY, NOINVERT
+    VK_END,         ID_EDIT_TEXT_END,       VIRTKEY, CONTROL, NOINVERT
+    VK_END,         ID_EDIT_EXT_LINE_END,   VIRTKEY, SHIFT, NOINVERT
+    VK_END,         ID_EDIT_EXT_TEXT_END,   VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_F1,          ID_HELP_CONTENTS,       VIRTKEY, NOINVERT
+    VK_F2,          ID_EDIT_GOTO_NEXT_BOOKMARK, VIRTKEY, NOINVERT
+    VK_F2,          ID_EDIT_TOGGLE_BOOKMARK, VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_EDIT_GOTO_PREV_BOOKMARK, VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_EDIT_CLEAR_ALL_BOOKMARKS, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    VK_F3,          ID_EDIT_FIND_PREVIOUS,  VIRTKEY, SHIFT, NOINVERT
+    VK_HOME,        ID_EDIT_HOME,           VIRTKEY, NOINVERT
+    VK_HOME,        ID_EDIT_TEXT_BEGIN,     VIRTKEY, CONTROL, NOINVERT
+    VK_HOME,        ID_EDIT_EXT_HOME,       VIRTKEY, SHIFT, NOINVERT
+    VK_HOME,        ID_EDIT_EXT_TEXT_BEGIN, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_INSERT,      ID_EDIT_SWITCH_OVRMODE, VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_EDIT_CHAR_LEFT,      VIRTKEY, NOINVERT
+    VK_LEFT,        ID_EDIT_WORD_LEFT,      VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_EDIT_EXT_CHAR_LEFT,  VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_EDIT_EXT_WORD_LEFT,  VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_NEXT,        ID_EDIT_PAGE_DOWN,      VIRTKEY, NOINVERT
+    VK_NEXT,        ID_EDIT_EXT_PAGE_DOWN,  VIRTKEY, SHIFT, NOINVERT
+    VK_PRIOR,       ID_EDIT_PAGE_UP,        VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_EDIT_EXT_PAGE_UP,    VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_EDIT_CHAR_RIGHT,     VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_EDIT_WORD_RIGHT,     VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_EDIT_EXT_CHAR_RIGHT, VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_EDIT_EXT_WORD_RIGHT, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_TAB,         ID_EDIT_TAB,            VIRTKEY, NOINVERT
+    VK_TAB,         ID_EDIT_UNTAB,          VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          ID_EDIT_LINE_UP,        VIRTKEY, NOINVERT
+    VK_UP,          ID_EDIT_SCROLL_UP,      VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_EDIT_EXT_LINE_UP,    VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EDIT_FIND DIALOG FIXED IMPURE  30, 73, 236, 62
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_STATIC,4,8,34,8
+    COMBOBOX        IDC_FIND_TEXT_EX,43,6,132,50,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Match &whole word only",IDC_EDIT_WHOLE_WORD,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,4,26,100,12
+    CONTROL         "Match &case",IDC_EDIT_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,42,64,12
+    GROUPBOX        "Direction",IDC_STATIC,107,26,68,28,WS_GROUP
+    CONTROL         "&Up",IDC_EDIT_DIRECTION_UP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,111,38,25,12
+    CONTROL         "&Down",IDC_EDIT_DIRECTION_DOWN,"Button",
+                    BS_AUTORADIOBUTTON,138,38,35,12
+    DEFPUSHBUTTON   "&Find Next",IDOK,182,5,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,182,23,50,14
+END
+
+IDD_PROJECT_ADDFOLDER DIALOG DISCARDABLE  0, 0, 260, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Folder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Root path:",IDC_STATIC,7,7,35,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FOLDER_PATH,44,7,157,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,203,6,50,14
+    LTEXT           "Add files:",IDC_STATIC,7,23,30,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_ADD_FILES_EX,43,22,158,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "(*.* - all, blank - none)",IDC_STATIC,43,37,81,10
+    CONTROL         "Add subfolders",IDC_OPT_ADD_SUBFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,43,48,89,12
+    DEFPUSHBUTTON   "OK",IDOK,149,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,203,65,50,14
+END
+
+IDD_FINDINFILES DIALOG DISCARDABLE  0, 0, 234, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Find in Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_STATIC,6,9,35,8
+    COMBOBOX        IDC_SEARCH_TEXT_EX,43,7,128,50,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "File types:",IDC_STATIC,6,25,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SEARCH_FILETYPES_EX,43,25,128,50,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Root path:",IDC_STATIC,5,43,35,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SEARCH_PATH_EX,43,43,128,50,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Match &whole word only",IDC_MATCH_WHOLE_WORD,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,61,89,12
+    CONTROL         "Match &case",IDC_OPT_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,74,64,12
+    CONTROL         "Search subfolders",IDC_OPT_SEARCH_SUBFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,102,61,79,12
+    DEFPUSHBUTTON   "Find",IDOK,179,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,179,24,50,14
+    PUSHBUTTON      "Browse...",IDC_BROWSE,179,42,50,14
+END
+
+IDD_GOTO DIALOG DISCARDABLE  0, 0, 144, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go to..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Go to line:",IDC_STATIC,7,8,35,8
+    EDITTEXT        IDC_GOTO_VALUE,45,7,35,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Go",IDOK,87,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,24,50,14
+END
+
+IDD_OPEN_FROM_URL DIALOG DISCARDABLE  0, 0, 242, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open From URL"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "URL:",IDC_STATIC,7,8,18,8
+    EDITTEXT        IDC_URL,27,7,208,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,132,24,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,24,50,14
+END
+
+IDD_OPTIONS_OUTPUT_PAGE DIALOG DISCARDABLE  0, 0, 184, 95
+STYLE DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Output Options Go Here",IDC_STATIC,16,20,139,36
+END
+
+IDD_OPTIONS_GENERAL_PAGE DIALOG DISCARDABLE  0, 0, 220, 64
+STYLE DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Automatically save documents before switching views",
+                    IDC_CHK_SAVE_ON_SWITCH,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    WS_TABSTOP,5,5,210,10
+    CONTROL         "Clear application messages in output window",
+                    IDC_CHK_CLEAR_OUTPUT,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    WS_TABSTOP,5,18,210,10
+    CONTROL         "Automatically reload files when modified outside of the program",
+                    IDC_CHK_RELOAD_MODIFIED,"Button",BS_AUTOCHECKBOX | 
+                    BS_TOP | BS_MULTILINE | WS_TABSTOP,5,31,210,18
+END
+
+IDD_OPTIONS_EDITOR_PAGE DIALOG DISCARDABLE  0, 0, 169, 162
+STYLE DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Syntax Colors",IDC_STATIC,5,5,132,101
+    LISTBOX         IDC_LIST_SYNTAX,11,18,119,64,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Color:",IDC_STATIC,29,88,19,8
+    PUSHBUTTON      "",IDC_COLOR_CHOOSE,54,84,52,15
+    GROUPBOX        "Font",IDC_STATIC,5,110,132,47
+    LTEXT           "Font:",IDC_STATIC,12,124,17,8
+    COMBOBOX        IDC_CBO_FONT,32,122,94,69,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Size:",IDC_STATIC,12,140,16,8
+    EDITTEXT        IDC_FONT_SIZE,32,138,23,12,ES_AUTOHSCROLL
+END
+
+IDD_OPTIONS_PROJECTMGR_PAGE DIALOG DISCARDABLE  0, 0, 159, 90
+STYLE DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Show folders before files",IDC_CHK_FOLDERS_FIRST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,5,130,10
+    GROUPBOX        "Display Full Paths",IDC_STATIC,5,19,130,55
+    CONTROL         "Projects",IDC_CHK_DFP_PROJECTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,31,49,10
+    CONTROL         "Folders",IDC_CHK_DFP_FOLDERS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,44,49,10
+    CONTROL         "Files",IDC_CHK_DFP_FILES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,57,49,10
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 236, 215
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TABS,"SysTabControl32",0x0,7,7,222,181
+    DEFPUSHBUTTON   "OK",IDOK,71,194,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,194,50,14
+    PUSHBUTTON      "&Apply",IDAPPLY,179,194,50,14
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 207, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Bonfire Studio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,6,20,20
+    LTEXT           "Bonfire Studio",IDC_STATIC,35,6,45,8,SS_NOPREFIX
+    LTEXT           "Version 1.4",IDC_STATIC,35,20,48,8
+    LTEXT           "Copyright (C) 2002-2003, NZ Software",IDC_STATIC,35,34,
+                    121,8
+    LTEXT           "Product Homepage: http://nzworks.com/bonfire",
+                    IDC_STATIC,35,48,153,8
+    LTEXT           "Parts of code by: Michael Dunn, John Rizzo, Andrei Stcherbatchenko, Chris Maunder, James White and Koay Kah Hoe",
+                    IDC_STATIC,35,62,144,25
+    DEFPUSHBUTTON   "OK",IDOK,150,89,50,14,WS_GROUP
+END
+
+IDD_EDIT_REPLACE DIALOG FIXED IMPURE  36, 44, 230, 88
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_STATIC,4,9,48,8
+    COMBOBOX        IDC_FINDREP_TEXT_EX,54,7,113,82,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Re&place with:",IDC_STATIC,4,26,48,8
+    COMBOBOX        IDC_EDIT_REPLACE_WITH_EX,54,24,113,64,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Match &whole word only",IDC_EDIT_WHOLE_WORD,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,46,91,12
+    CONTROL         "Match &case",IDC_EDIT_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,62,59,12
+    GROUPBOX        "Replace in",IDC_STATIC,97,43,71,37,WS_GROUP
+    CONTROL         "&Selection",IDC_EDIT_SCOPE_SELECTION,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,102,54,59,10
+    CONTROL         "Wh&ole file",IDC_EDIT_SCOPE_WHOLE_FILE,"Button",
+                    BS_AUTORADIOBUTTON,102,66,58,10
+    DEFPUSHBUTTON   "&Find Next",IDC_EDIT_SKIP,174,4,50,14,WS_GROUP
+    PUSHBUTTON      "&Replace",IDC_EDIT_REPLACE,174,21,50,14
+    PUSHBUTTON      "Replace &All",IDC_EDIT_REPLACE_ALL,174,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,55,50,14
+END
+
+IDD_OPTIONS_XMLTREE_PAGE DIALOG DISCARDABLE  0, 0, 189, 135
+STYLE WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tag Attributes",IDC_CHK_SHOW_XML_ATTRIBUTES,"Button",
+                    BS_AUTOCHECKBOX | BS_TOP | WS_TABSTOP,13,35,64,10
+    CONTROL         "Text Elements",IDC_CHK_SHOW_XML_TEXT,"Button",
+                    BS_AUTOCHECKBOX | BS_TOP | WS_TABSTOP,13,48,73,10
+    CONTROL         "Comments",IDC_CHK_SHOW_XML_COMMENTS,"Button",
+                    BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,13,
+                    61,68,11
+    GROUPBOX        "Show Nodes",IDC_STATIC,5,23,134,54
+    GROUPBOX        "Font",IDC_STATIC,5,82,134,47
+    LTEXT           "Font:",IDC_STATIC,14,96,17,8
+    COMBOBOX        IDC_OPTIONS_XMLTREE_FONT,34,94,94,69,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Size:",IDC_STATIC,14,112,16,8
+    EDITTEXT        IDC_OPTIONS_XMLTREE_FONTSIZE,34,110,23,12,ES_AUTOHSCROLL
+    CONTROL         "Edit Nodes in XML Tree View",IDC_CHK_EDIT_XMLTREE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,5,134,10
+END
+
+IDD_OPTIONS_VIEWS_PAGE DIALOG DISCARDABLE  0, 0, 200, 161
+STYLE DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST_FILEEXT,5,16,95,109,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILEEXT,5,127,95,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Add",IDC_ADD_EDIT_FILEEXT,8,141,42,14
+    PUSHBUTTON      "&Delete",IDC_DELETE_FILEEXT,54,141,42,14
+    LTEXT           "File Extensions (e.g. 'txt,htm'):",IDC_STATIC,5,5,95,10
+    CONTROL         "List1",IDC_LIST_VIEWS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,104,16,91,75
+    PUSHBUTTON      "5",IDC_MOVE_UP,163,93,16,14,NOT WS_VISIBLE
+    PUSHBUTTON      "6",IDC_MOVE_DOWN,179,93,16,14,NOT WS_VISIBLE
+    LTEXT           "Available Views:",IDC_STATIC,104,5,91,10
+    LTEXT           "Syntax Highlighting:",IDC_STATIC,104,115,91,10
+    COMBOBOX        IDC_COMBO_HIGHLIGHTING,104,126,91,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,4,0,0
+ PRODUCTVERSION 1,4,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Bonfire Studio\0"
+            VALUE "FileVersion", "1, 4, 0, 0\0"
+            VALUE "InternalName", "Bonfire\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002, NZ Software\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Bonfire.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Bonfire Studio\0"
+            VALUE "ProductVersion", "1, 4, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROJECT_ADDFOLDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_FINDINFILES, DIALOG
+    BEGIN
+        RIGHTMARGIN, 229
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_OPEN_FROM_URL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_OPTIONS_OUTPUT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 179
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_OPTIONS_GENERAL_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 215
+        VERTGUIDE, 215
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_OPTIONS_EDITOR_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 164
+        VERTGUIDE, 137
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_OPTIONS_PROJECTMGR_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 154
+        VERTGUIDE, 135
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_OPTIONS_XMLTREE_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 182
+        VERTGUIDE, 139
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_OPTIONS_VIEWS_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 195
+        VERTGUIDE, 100
+        VERTGUIDE, 104
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDR_MARGIN_CURSOR       CURSOR  DISCARDABLE     "res\\MarginCursor.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROJECT_ADDFOLDER DLGINIT
+BEGIN
+    IDC_ADD_FILES_EX, 0x403, 4, 0
+0x2e2a, 0x002a, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Bonfire Studio"
+    IDR_BONFIRETYPE         "\nUntitled\nUntitled\n\n\nBonfire.Document\nBonfire Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Bonfire Studio"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_READ       "READ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew File"
+    ID_FILE_OPEN            "Open an existing document\nOpen File"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave File"
+    ID_FILE_SAVE_AS         "Save the active project with a new name\nSave File As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Show a list of topics to browse for help on\nHelp Index"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Find Next\nFind Next"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the main toolbar\nToggle Main Toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_PROJECT_FILE  "Unable to open the project file."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EDIT_TEXT_NOT_FOUND "Cannot find string""%s"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_UNDO_FORMAT    "&Undo %s\tCtrl+Z"
+    IDS_MENU_REDO_FORMAT    "&Redo %s\tCtrl+Y"
+    IDS_MENU_UNDO_DEFAULT   "&Undo\tCtrl+Z"
+    IDS_MENU_REDO_DEFAULT   "&Redo\tCtrl+Y"
+    IDS_EDITOP_UNKNOWN      "Unknown"
+    IDS_EDITOP_PASTE        "Paste"
+    IDS_EDITOP_DELSELECTION "Delete Selection"
+    IDS_EDITOP_CUT          "Cut"
+    IDS_EDITOP_DELETE       "Delete"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EDITOP_TYPING       "Typing"
+    IDS_EDITOP_BACKSPACE    "Backspace"
+    IDS_EDITOP_INDENT       "Indent"
+    IDS_EDITOP_DRAGDROP     "Drag And Drop"
+    IDS_EDITOP_REPLACE      "Replace"
+    IDS_EDITOP_AUTOINDENT   "Auto Indent"
+    IDS_EDITOP_TGL_COMMENT  "Toggle Comment"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_READONLY        "Toggle read-only state for the current document\nRead-Only"
+    ID_FILE_PROPERTIES      "Display File Properties"
+    ID_PROJECT_OPEN         "Open an existing project\nOpen Project"
+    ID_PROJECT_NEW          "Create a new project\nNew Project"
+    ID_FILE_SAVEALL         "Save all unsaved documents and projects\nSave All"
+    ID_VIEW_PROJECTEXPLORER "Show or hide the project explorer window\nToggle Project Explorer"
+    ID_VIEW_OUTPUTWINDOW    "Show or hide the output window\nToggle Output"
+    ID_VIEW_TAGPROPERTIES   "Show or hide the tag properties window\nToggle Tag Properties"
+    ID_VIEW_TOOLBAR_PROJECT "Show or hide the project toolbar\nToggle Project Toolbar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROJECT_SAVE         "Save the active project\nSave Project"
+    ID_PROJECT_CLOSE        "Close current project\nClose Project"
+    ID_PROJECT_SAVEAS       "Save the active project under a different file name\nSave Project As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROJECT_NEWFOLDER    "Add New Folder to project\nAdd New Folder"
+    ID_PROJECT_NEWFILE      "Add New File to project\nAdd New File"
+    ID_EDIT_UPPERCASESELECTION 
+                            "Convert all characters in the current selection to upper case"
+    ID_PROJECT_REMOVEFROMPROJECT "Remove from project\nRemove item(s)"
+    ID_PROJECT_ADDDIRTOPROJECT 
+                            "Add Folder(s) to current project or folder\nAdd Folder(s)"
+    ID_PROJECT_ADDFILESTOPROJECT 
+                            "Add File(s) to current project or folder\nAdd File(s)"
+    ID_EDIT_LOWERCASESELECTION 
+                            "Convert all characters in the current selection to lower case"
+    ID_EDIT_GOTOLINE        "Go to a specific line in the text"
+    ID_TOOLS_OPTIONS        "Customize Bonfire Studio"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROJECT_PROPERTIES   "Display the properties of the project file"
+    ID_VIEW_FULLSCREEN      "Toggle the application to Full Screen mode\nFull Screen"
+    ID_FILE_SHOW            "Show the contents of the selected file"
+    ID_VIEW_TOOLBAR_FIND    "Show or hide the find toolbar\nToggle Find Toolbar"
+    ID_EDIT_FINDINFILES     "Find text inside multiple files\nFind In Files"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_POS        "Line: %s, Char: %s          "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_FIND_PREVIOUS   "Find Previous\nFind Previous"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_PROJECT1    "Open this project"
+    ID_FILE_MRU_PROJECT2    "Open this project"
+    ID_FILE_MRU_PROJECT3    "Open this project"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_PROJECT4    "Open this project"
+    ID_HELP_HOMEPAGE        "Visit our homepage"
+    ID_HELP_CONTENTS        "Show the help contents\nHelp Contents"
+    ID_HELP_SEARCH          "Search for a keyword in the help file\nHelp Search"
+    ID_FILE_RENAME          "Rename the current file"
+    ID_FOLDER_RENAME        "Rename the current folder"
+    ID_PROJECT_RENAME       "Rename the current project"
+    ID_PROJECT_REFRESHPROJECT "Refresh all the items in the project"
+    ID_PROJECT_REFRESH      "Refresh all the items in the project"
+    ID_WINDOW_CLOSEALL      "Close all documents"
+    ID_FILE_OPENFROMURL     "Open a file from the web"
+    ID_TOOLS_LOCATEINEXPLORER "Locate current file or directory in explorer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_OPENDEFAULT    "Open the selelcted file in the default Windows application"
+    ID_FILE_MOVETO_PROJECT2 "Move Current Item to Another Project"
+    ID_FILE_MOVETO_PROJECT1 "Move Current Item to Another Project"
+    ID_FILE_MOVETO_PROJECT3 "Go to a specific line in the text"
+    ID_FILE_MOVETO_PROJECT4 "Open the selected file under the Windows default application"
+    ID_FILE_MOVETO_PROJECT5 "Move Current Item to Another Project"
+    ID_FILE_MOVETO_PROJECT6 "Move Current Item to Another Project"
+    ID_FILE_MOVETO_PROJECT7 "Move Current Item to Another Project"
+    ID_FILE_MOVETO_PROJECT8 "Move Current Item to Another Project"
+    ID_ATTRIBUTE_EDIT_NAME  "Change the selected attribute's name\nEdit Name"
+    ID_ATTRIBUTE_EDIT_VALUE "Change the selected attribute's value\nEdit Value"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_DELETE          "Delete the current character"
+    ID_EDIT_TAB             "Indent the current selection"
+    ID_EDIT_UNTAB           "Unindent the current selection"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_VIEWS_FILEEXT_EXISTS 
+                            "A file extension specified already exists."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ELEMENT_INSERT_ATTRIBUTE 
+                            "Insert a new attribute into the selected node\nInsert Attribute"
+    ID_ELEMENT_INSERT_COMMENT 
+                            "Insert a new comment as a child of the selected node\nInsert Comment"
+    ID_ELEMENT_INSERT_TEXT  "Insert a text into the selected node\nInsert Text"
+    ID_COMMENT_EDIT         "Edit the comment text\nEdit Comment Text"
+    ID_ELEMENT_EDIT_NAME    "Edit the element (tag) name\nEdit Element Name"
+    ID_ELEMENT_INSERT_ELEMENT 
+                            "Insert a new element as a child of the selected node\nInsert Element"
+    ID_TEXTNODE_EDIT        "Edit the text of this item\nEdit Text"
+    ID_ELEMENT_EXPAND_COLLAPSE 
+                            "Toggle the expanded/collapsed state of the selected element\nExpand/Collapse"
+    ID_ELEMENT_EXPANDALL    "Expand all children and sub-children of the selected element\nExpand All"
+    ID_ELEMENT_COLLAPSEALL  "Collapse all children and sub-children of the selected element\nCollapse All"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILTER_FILES        "XML Files (*.xml;*.xsl;*.xsd,*.xhtm)|*.xml;*.xsl;*.xsd,*.xhtm|HTML Files (*.html;*.htm)|*.html;*.htm|CSS Files (*.css)|*.css|C++ Files (*.cpp;*.c;*.h;*.hpp;*.cxx)|*.cpp;*.c;*.h;*.hpp;*.cxx|SQL Files (*.sql)|*.sql|All Files (*.*)|*.*||"
+    IDS_DEFEXT_PROJECTS     "xml"
+    IDS_FILTER_PROJECTS     "Bonfire Projects (*.xpr)|*.xpr|All Files (*.*)|*.*||"
+    IDS_DEFEXT_FILES        "xpr"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Bonfire.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

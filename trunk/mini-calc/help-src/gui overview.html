@@ -1,0 +1,47 @@
+<script>var pagename="GUI (User Interface) Overview"</script>
+<script src="header.js"></script>
+<h5>Below is a summary of the MiniCalc user interface.</h5>
+
+<script>
+<!--
+
+function SetInfoText(n)
+{
+	var arr = new Array(
+		"The <b>menu</b> contains commands to set options and view the functions and variables available. \
+			<br><br>To see detailed information about available menu commands, <a href=menu.html target=_top>click here.</a>",
+		
+		"The <b>output window</b> allows you to see the results of entered expressions and commands. \
+			It also displays system messages.",
+			
+		"The <b>input window</b> allows you to enter commands and mathematical expressions to be calculated. \
+			<br><br>Pressing the up and down navigation keys on the keyboard will switch through the most recently used input commands/expressions. \
+			Pressing enter will process the input. Holding down the Control key while pressing enter will run the input without clearing the \
+			input window. \
+			<br><br>To see detailed information about the syntax of input, <a href='common syntax.html' target=_top>click here.</a>",
+			
+		"This dragging 'gripper' will allow you to resize MiniCalc (similar to dragging the bottom-right corner of a window)."
+		);
+		
+	var infodiv = document.getElementById("infodiv");
+	infodiv.innerHTML = arr[n];
+}
+
+//-->
+</script>
+
+<table cellpadding=0 cellspacing=0><tr><td>
+<img src="gui.gif" usemap="#gui.gif" align="left" width="311" height="242" border="0">
+<div id="infodiv" style="width:300; border: 1px solid #808080; background-color: #FFFFEF; padding:2px;">
+Click on an item to see more information.</div>
+
+<map name="gui.gif">
+<area shape="rect" coords="3,22,300,41" href="javascript:SetInfoText(0);" alt="Menu">
+<area shape="rect" coords="5,43,298,211" href="javascript:SetInfoText(1);" alt="Output Window">
+<area shape="rect" coords="5,211,285,229" href="javascript:SetInfoText(2);" alt="Input Window">
+<area shape="rect" coords="286,211,300,231" href="javascript:SetInfoText(3);" alt="Size Gripper">
+</map>
+
+</td></tr></table>
+
+<script src="footer.js"></script>

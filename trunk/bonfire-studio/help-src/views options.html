@@ -1,0 +1,52 @@
+<script>var pagename="Views/Parsers Options"</script>
+<script src="bonfirehelp.js"></script>
+The Views/Parsers Dialog allows you to configure how to handle the syntax highlighting 
+and what views to use for each type of file that you deal with. 
+Click below on an area of the screenshot to see the description of that portion of the dialog.<br><br>
+
+<script>
+<!--
+
+function SetInfoText(n)
+{
+	var arr = new Array(
+		"The <b>file extension selection list</b> contains the file extensions that will specially handled \
+			in Bonfire. All extensions not in this list will use the (Default) view/parsing configuration.",
+		
+		"The <b>available views list</b> allows you to choose which views will be available for selection when files with \
+			the selected extension(s) are open.",
+			
+		"The <b>new file extension text box</b> allows you to enter the new file extension(s) you would like to set up. \
+			You may group extensions together by separating them with commas. After you have added the extension(s), select them \
+			in the list and modify their properties on the right.",
+			
+		"The <b>add and delete buttons</b> allow you to add the extension(s) in the new file extension text box to the \
+			list or remove the selected extension(s).",
+			
+		"The <b>syntax highlighting selector</b> allows you to choose which syntax highlighting &quot;language&quot; will be \
+			used for the source/text view, if that view is enabled."
+		);
+		
+	var infodiv = document.getElementById("infodiv");
+	infodiv.innerHTML = arr[n];
+}
+
+//-->
+</script>
+
+<table cellpadding=0 cellspacing=0><tr><td>
+<img src="options_viewsparsers.gif" usemap="#options_viewsparsers.gif" align="left" width="360" height="374" border="0">
+<div id="infodiv" style="width:300; border: 1px solid #808080; background-color: #FFFFEF; padding:2px;">
+Click on an item to see more information.</div>
+
+<map name="options_viewsparsers.gif">
+<area shape="rect" coords="26,81,168,257" href="javascript:SetInfoText(0);" alt="File Extension Selection List">
+<area shape="rect" coords="174,81,310,202" href="javascript:SetInfoText(1);" alt="Available Views List">
+<area shape="rect" coords="26,261,168,280" href="javascript:SetInfoText(2);" alt="New File Extension Textbox">
+<area shape="rect" coords="26,280,168,310" href="javascript:SetInfoText(3);" alt="Add/Delete Buttons">
+<area shape="rect" coords="174,261,310,321" href="javascript:SetInfoText(4);" alt="Syntax Highlighting Selector">
+</map>
+
+</td></tr></table>
+
+<script src="bonfirehelpfooter.js"></script>

@@ -1,0 +1,160 @@
+<script>var pagename="Feature Overview"</script>
+<script src="bonfirehelp.js"></script>
+<p><h6>Version 1.4.0</h6></p>
+<h5>Bug Fixes</h5>
+<ul>
+	<li>Saving files with '&' in the name corrupts the project file</li>
+	<li>Find in files doesn't show multiple occurences of the text in one line, only the first occurence</li>
+	<li>Clean up output messages remove unwanted (\r, \n) characters</li>
+	<li>When expanding/collapsing project folders, the icon appears incorrect</li>
+</ul>
+<h5>New Features/ Enhancements</h5>
+<ul>
+	<li>Speed up xml tree. project tree</li>
+	<li>Print xml tree</li>
+	<li>CSS syntax-highlighting</li>
+	<li>XML Tree - popup menu with new commands</li>
+	<li>Validate File (only with XDR schemas only)</li>
+	<li>Overwrite indicator</li>
+	<li>Configure file types - views and parsers</li>
+	<li>Configure display of attributes, text, comments in XML Tree View</li>
+	<li>Allow to disable Source View, makes file read-only (jpg, doc, etc.)</li>
+</ul>
+<hr><p><h6>Version 1.3.2</h6></p>
+<h5>Bug Fixes</h5>
+<ul>
+	<li>Find in Files doesn't search in all subfolders</li>
+	<li>Remeber the "search subfolders" option in FIF dialog</li>
+	<li>Goto raises invalid input error</li>
+	<li>Opening a link from the FIF results doesnt go to the correct line number</li>
+	<li>When printing, all output is in wingdings characters (some systems)</li>
+	<li>Using splitter in source view crashes when switching back to source view from other views</li>
+</ul>
+<hr><p><h6>Version 1.3.1</h6></p>
+<h5>Bug Fixes</h5>
+<ul>
+	<li>When renaming a folder and cancelling, it still tries to rename it</li>
+	<li>When adding folders, if "add subfolders" is not checked, no files are added</li>
+	<li>Recent projects aren't being saved into the Most Recently Used list</li>
+	<li>Dblclick/Enter on project/folder node doesn't expand it</li>
+	<li>Pressing up/down doesn't always work in Project Manager</li>
+	<li>When asking to split lines, the warning message is misleading. Now it assures the user that the file will not be corrupted after splitting</li>
+</ul>
+<h5>New Features/ Enhancements</h5>
+<ul>
+	<li>Added menus for bookmarks</li>
+	<li>Views don't refresh unless the file was modified</li>
+	<li>Allow splitter for Source View</li>
+</ul>
+<hr>
+<p><h6>Version 1.3</h6></p>
+<h5>Bug Fixes</h5>
+<ul>
+	<li>When performing "close all windows", all projects get closed as well</li>
+	<li>When saving a project "as", the recent project list doesn't get updated</li>
+	<li>When switching to Browser View and back to Source View, the window doesn't resize with the frame</li>
+	<li>In XML Tree View, the Root node's text is only the first character instead of the whole tag name</li>
+	<li>Shouldn't be able to add a folder if it doesn't exist</li>
+	<li>When a file contains lines with too many characters (more than 1024), fatal exception occurs</li>
+	<li>Moving a file made it temporarily read-only</li>
+	<li>Save All wasn't enabled if only a project was modified</li>
+	<li>Drag n Drop timers weren't being reset properly</li>
+	<li>When creating a new File, and typing something in it, then closing and not saving, the node does not get removed from the Project Tree</li>
+</ul>
+<h5>New Features/ Enhancements</h5>
+<ul>
+	<li>Run/Execute File (under OS default application)</li>
+	<li>Open a file from a specified URL</li>
+	<li>Mouse Wheel Scrolling</li>
+	<li>All dialogs use a history dropdown instead of text fields and remember all the options when re-opening the dialog</li>
+	<li>Allows ENTER and ESC key when editing labels in Project Manager</li>
+	<li>Gives option to open a file for read-only even if the file is not read-only</li>
+	<li>Allows dragging in source editor</li>
+	<li>Nicer disabled toolbar bitmaps</li>
+</ul>
+<hr>
+<p><h6>Version 1.2.1</h6></p>
+<h5>Bug Fixes</h5>
+<ul>
+	<li>Prevent adding the same folder</li>
+	<li>When switching between output tabs, the order of items gets reversed</li>
+	<li>When saving a new file in miscellaneous, its icon becomes "not found"</li>
+	<li>When dbl-clicking on project in Windows Explorer, Bonfire Studio tries to open the project file, and gives an exception</li>
+	<li>Caption of child doc changes when saving (Windows XP)</li>
+	<li>Disallow adding of the same file in Project Manager</li>
+</ul>
+<h5>New Features/ Enhancements</h5>
+<ul>
+	<li>Move files and folders to different folders/project using drag-n-drop or popup menus</li>
+	<li>Find in Files shows number of results</li>
+	<li>Goto Line</li>
+	<li>Added Search Menu to hold Find and Goto tools</li>
+</ul>
+<hr>
+<p><h6>Version 1.2</h6></p>
+<h5>Bug Fixes</h5>
+<ul>
+	<li>When saving Miscellaneous as another project, it becomes "NEW"</li>
+	<li>On Save All, the application shouldn't ask to save changes to each file</li>
+	<li>Read-only files should ask to save on switching views</li>
+	<li>Apostrophies and quotations were syntax-highlighted outside of xml tags</li>
+	<li>Fixed menu mnemonics</li>
+	<li>Disallow adding of the same file in Project Manager</li>
+</ul>
+<h5>New Features/ Enhancements</h5>
+<ul>
+	<li>New interface for output window</li>
+	<li>New look for Dock bars</li>
+	<li>Locate in Explorer - Find the selected file or folder in Windows Explorer</li>
+	<li>Close Current/All Window(s)</li>
+	<li>Find in Files</li>
+	<li>Add images to Help file</li>
+</ul>
+<hr>
+<p><h6>Version 1.1</h6></p>
+<h5>Bug Fixes</h5>
+<ul>
+	<li>Disabled delete of "Miscellaneous" project</li>
+	<li>No more "virtual" files - copies file to the folder under which you are adding it</li>
+	<li>Shows correct icon of each document (icon disappeared after save)</li>
+	<li>When exiting fullscreen mode, it restores to original state</li>
+	<li>When saving on switching views, sometimes it didn't change caption on save</li>
+	<li>Used to ask twice to save changes on switching views</li>
+</ul>
+<h5>New Features/ Enhancements</h5>
+<ul>
+	<li>Sorting nodes in Project Manager</li>
+	<li>Option to view folders first or files in Project Manager</li>
+	<li>Monitors modifying files outside the application</li>
+	<li>Uses temporary files (puts them into environment TEMP folder) when switching views</li>
+	<li>Recent projects list</li>
+	<li>Drag files from other apps</li>
+</ul>
+<hr>
+<p><h6>Version 1.0</h6></p>
+<h5>User Interface</h5>
+<ul>
+	<li>MDI (Multiple Document) Interface.</li>
+	<li>Docking Toolbars</li>
+	<li>Colorful Menus</li>
+	<li>256-color Icons</li>
+	<li>Output window for error messages</li>
+	<li>Standard edit options (Cut, Copy, Paste, Select All, etc.)</li>
+	<li>Fullscreen View</li>
+	<li>Output Window</li>
+	<li>Project Manager Window</li>
+</ul>
+<h5>Document Views</h5>
+<ul>
+	<li>Source view (with syntax-highlighting)</li>
+	<li>XML Tree view</li>
+	<li>Browser view</li>
+</ul>
+<h5>Project Management</h5>
+<ul>
+	<li>Create, Open, Save Projects</li>
+	<li>Create New Folders</li>
+	<li>Add/Remove Files, Folders</li>
+	<li>Miscellaneous Files project</li>
+</ul>
+<script src="bonfirehelpfooter.js"></script>

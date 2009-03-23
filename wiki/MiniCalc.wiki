@@ -1,4 +1,7 @@
 #summary MiniCalc homepage
+#labels Product-MiniCalc
+
+http://nz-software.googlecode.com/svn/trunk/mini-calc/help-src/minicalc.gif
 
 = Introduction =
 

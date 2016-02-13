@@ -1,0 +1,5 @@
+![http://nz-software.googlecode.com/svn/trunk/bonfire-studio/help-src/bonfire_help_logo.gif](http://nz-software.googlecode.com/svn/trunk/bonfire-studio/help-src/bonfire_help_logo.gif)
+
+# Introduction #
+
+Bonfire is an editor and file/project manager for XML, XSL, and HTML. UI is a multiple-document interface, and includes docking toolbars, an error message window, and a project manager window. Documents can be viewed in source code mode (with syntax-highlighting), in an XML tree, or in a browser view. Currently, Bonfire supports syntax highlighting of XML, XSL, HTML, and C++. Multiple files and directories can be grouped together into one project file. Files can be dragged from other applications into Bonfire, and there¹s a recent files and projects list. Bonfire requires Internet Explorer 5 or MSXML parser Version 3. This release adds drag-n-drop functionality in Project Manager, and allows opening of a file from a specified URL.

@@ -1,0 +1,1 @@
+Old Win32 software (some MFC), including [Bonfire Studio](BonfireStudio.md), [Hex Color Finder](HexColorFinder.md), and MiniCalc, now open sourced!
